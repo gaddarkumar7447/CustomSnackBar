@@ -1,41 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:ignore="MissingDefaultResource">
+
     <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:cardBackgroundColor="@color/white"
+        android:layout_height="55dp"
+        app:cardBackgroundColor="@color/info"
         android:layout_marginTop="10dp"
+        app:cardCornerRadius="7dp"
         android:layout_marginBottom="10dp"
         app:cardElevation="3dp">
+
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:orientation="horizontal"
             android:gravity="center">
-            <View
-                android:layout_width="3dp"
-                android:layout_height="match_parent"
-                android:background="#EF5954"/>
-            <RelativeLayout
-                android:layout_width="26dp"
-                android:layout_height="26dp"
-                android:layout_marginStart="16dp">
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="@drawable/shape_alert_round_danger_bg"/>
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    app:tint="@color/white"
-                    android:padding="4dp"
-                    android:contentDescription="@null"
-                    android:src="@drawable/ic_base_close"/>
-            </RelativeLayout>
+
+
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -49,14 +36,16 @@
                     android:id="@+id/messageView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="#2f333c"
+                    android:textColor="@color/white"
+                    android:fontFamily="sans-serif-condensed"
                     android:textSize="15sp"/>
             </LinearLayout>
+
             <ImageView
                 android:id="@+id/closeBtn"
                 android:layout_width="40dp"
                 android:layout_height="match_parent"
-                android:src="@drawable/ic_base_close"
+                android:src="@drawable/icbase_close"
                 android:padding="5dp"
                 android:clickable="true"
                 android:focusable="true"
